@@ -234,36 +234,6 @@ footer {
   padding: 25px;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0 5%;
-  }
-
-  nav a {
-    display: none;
-  }
-
-  .nav-button {
-    display: inline-block;
-  }
-
-  .hero h1 {
-    font-size: 2.6rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-
-  .floating-contact {
-    right: 15px;
-    bottom: 15px;
-  }
-
-  .profile-card {
-    max-width: 100%;
-  }
-}
 .about-section {
   background: linear-gradient(135deg, #f7f8f5, #eef3df);
   display: flex;
@@ -344,4 +314,91 @@ footer {
 .contact-item {
   margin-top: 15px;
   font-size: 1.1rem;
+}
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    min-height: 70px;
+    padding: 15px 5%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+
+  .nav-button {
+    padding: 8px 14px;
+  }
+
+  .hero {
+    min-height: 80vh;
+    background-attachment: scroll;
+    background-position: center;
+    padding: 120px 25px 60px;
+     background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    min-height: 75vh;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.8rem;
+  }
+
+  .section {
+    padding: 65px 6%;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .about-box {
+    padding: 40px 25px;
+  }
+
+  .about-box h2 {
+    font-size: 2rem;
+  }
+
+  .about-box p {
+    font-size: 1rem;
+  }
+
+  .floating-contact {
+    right: 15px;
+    bottom: 15px;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+  }
+  .profile-card {
+  max-width: 100%;
+}
+
+  .profile-img {
+    height: 300px;
+  }
 }
